@@ -20,7 +20,11 @@ user = User(name="Tahmid", group=7701, role_admin=False, username="user1", passw
 user = User(name="Taufiq", group=7701, role_admin=False, username="user2", password="pass2", email="q@vt.edu")
 user = User(name="Labiba", group=7701, role_admin=False, username="user3", password="pass3", email="l@vt.edu")
 
+user.save()
+
 location = Location(user.id=1, longitude=37.2283843, latitude=-80.4234167)
+
+location.save()
 
 
 ## Others 
