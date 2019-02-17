@@ -1,0 +1,18 @@
+DB check shell commands
+
+# In python shell
+
+from api.models import User
+user = User(name="Ri", identifier=9901, group=7701)
+user.save()
+User.objects.all()
+
+# Query by specific values
+
+user = User.objects.get(identifier=9901)
+
+user.current_panic_state()
+
+# Insert value
+
+user = User(name="Taufiq", identifier=96, group=7701, role_admin=True)
