@@ -1,5 +1,6 @@
 from tastypie.resources import ModelResource
 from api.models import User, Location
+from tastypie.authorization import Authorization
 
 class UserResource(ModelResource):
 	class Meta:
