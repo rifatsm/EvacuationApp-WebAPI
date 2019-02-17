@@ -16,6 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf.urls import url, include
+# from django.contrib import admin
+from api.resources import UserResource, LocationResource
+
+user_resource = UserResource()
+location_resource = LocationResource()
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(r'^admin/', admin.site.urls),
+    url(r'^api/', include(user_resource.urls)),
+    url(r'^api/', include(location_resource.urls)),
+
 ]
