@@ -37,3 +37,4 @@ python manage.py sqlflush
 
 # TastyPie documentation:
  = https://django-tastypie.readthedocs.io/en/latest/tutorial.html
+ = https://www.agiliq.com/blog/2015/03/getting-started-with-django-tastypie/
