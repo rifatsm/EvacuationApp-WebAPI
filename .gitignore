@@ -1,0 +1,7 @@
+# virtualenv #
+##############
+venv_evacApp/
+
+# OS generated files #
+######################
+.DS_Store
