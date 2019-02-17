@@ -18,3 +18,6 @@ class User(models.Model):
 		return self.identifier
 	def get_group(self):
 		return self.group
+	def change_state(self):
+		self.current_state = not self.current_state
+		return self.current_state
