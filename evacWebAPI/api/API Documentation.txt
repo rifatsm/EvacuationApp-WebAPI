@@ -1,0 +1,47 @@
+#####################
+# API Documentation #
+#####################
+
+-- Accessed by all types of users --
+
+# ../register/
+	Parameters: username, password, email, role_admin, group
+
+# ../login/
+	Parameters: username, password
+				(or) email, password
+
+# ../mark_safe/
+	Parameters: username
+				(or) id
+
+
+# ../send_location/
+	Parameters: username
+
+
+-- Accessed by only Admin users --
+# ../panic_on/
+	Parameters: username
+
+# ../panic_off/
+	Parameters: username (group)
+
+# ../reset/
+	Parameters: username (group)
+
+
+-- Accessed by only Public users --
+
+# ../report_hazard/
+	Parameters: username
+
+
+-- Accessed by Rescue team --
+
+# ../location_list/ 
+	Parameters: longitude, latitude 
+
+# ../sound_alarm/
+	Parameters: id (of location)
+
