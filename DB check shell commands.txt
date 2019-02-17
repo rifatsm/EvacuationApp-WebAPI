@@ -9,7 +9,7 @@ User.objects.all()
 
 # Query by specific values
 
-user = User.objects.get(identifier=9901)
+user = User.objects.get(id=1)
 
 user.current_panic_state()
 
@@ -19,6 +19,8 @@ user = User(name="Ri", group=7701, role_admin=True, username="rifatsm", password
 user = User(name="Tahmid", group=7701, role_admin=False, username="user1", password="pass1", email="t@vt.edu")
 user = User(name="Taufiq", group=7701, role_admin=False, username="user2", password="pass2", email="q@vt.edu")
 user = User(name="Labiba", group=7701, role_admin=False, username="user3", password="pass3", email="l@vt.edu")
+
+location = Location(user.id=1, longitude=37.2283843, latitude=-80.4234167)
 
 
 ## Others 

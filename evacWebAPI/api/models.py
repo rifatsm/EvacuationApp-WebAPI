@@ -4,7 +4,6 @@ from django.db import models
 
 class User(models.Model):
 	name = models.CharField(max_length=50)
-	# identifier = models.IntegerField()
 	username = models.CharField(max_length=20, unique=True, blank=True, null=True)
 	password = models.CharField(max_length=50, blank=True, null=True)
 	email = models.EmailField(max_length=50, blank=True, null=True)
@@ -37,4 +36,4 @@ class Location(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True)
 
 	def __str__(self):
-		return 'user: %d longitude: %s latitude: %s created_at: %s' % (self.user, self.longitude, self.latitude, self.created_at)
+		return 'user: %d longitude: %s latitude: %s created_at: %s' % (self.user.id, self.longitude, self.latitude, self.created_at)
