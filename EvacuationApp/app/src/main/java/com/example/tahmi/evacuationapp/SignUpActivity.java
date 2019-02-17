@@ -12,15 +12,15 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_user_panic);
 
-        submit = (Button) findViewById(R.id.submit);
-
-        submit.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v) {
-                startActivity(new Intent(SignUpActivity.this, TriggerActivity.class));
-            }
-        });
+//        submit = (Button) findViewById(R.id.submit);
+//
+//        submit.setOnClickListener(new View.OnClickListener()
+//        {
+//            public void onClick(View v) {
+//                startActivity(new Intent(SignUpActivity.this, TriggerActivity.class));
+//            }
+//        });
     }
 }
