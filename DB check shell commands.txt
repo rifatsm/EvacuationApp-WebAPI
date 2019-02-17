@@ -15,4 +15,19 @@ user.current_panic_state()
 
 # Insert value
 
-user = User(name="Taufiq", identifier=96, group=7701, role_admin=True)
+user = User(name="Ri", group=7701, role_admin=True, username="rifatsm", password="pass0", email="r@vt.edu")
+user = User(name="Tahmid", group=7701, role_admin=False, username="user1", password="pass1", email="t@vt.edu")
+user = User(name="Taufiq", group=7701, role_admin=False, username="user2", password="pass2", email="q@vt.edu")
+user = User(name="Labiba", group=7701, role_admin=False, username="user3", password="pass3", email="l@vt.edu")
+
+
+## Others 
+
+# Create virtualenv with python3
+virtualenv -p python3 venv_evacApp
+
+# Install packages from requirements.txt using pip
+pip install -r requirements.txt
+
+# Drop all tables from current DB
+python manage.py sqlflush
